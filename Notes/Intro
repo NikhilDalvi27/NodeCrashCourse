@@ -1,0 +1,69 @@
+https://www.youtube.com/watch?v=fBNz5xF-Kx4
+
+This doesn't use Express
+Express is just a FrameWork
+
+
+1)What is Node.js
+- It's a JavaScript Runtime (Not a Language or a FrameWork)
+- Built on V8 Engine which is written in C++
+- Allows JavaScript Code to run on a Server
+
+
+2)Why use Node.js
+- Fast Efficient and Highly Scalable
+- Event Driven, non blocking I/O model
+
+
+3)What is Non Blocking I/O
+- Works on a single thread using non blocking I/O calls(Asynchronous)
+ ....unlike php which spawns a new thread on a new request(Synchronous)
+- Supports tens and thousands concurrent connections
+- Optimizes throughput and scalability in apps with many I/O operations
+
+Don't use Node with CPU intensive apps
+--like long running calculations
+
+NOTE
+- Node is Single threaded
+
+4)Best Types of Project for Node.js
+- Anything that is not CPU intensive
+- REST API and Microservices
+- CRUD Apps - Blogs, Shopping Carts, Social Networks
+- Tools and Utilities
+
+
+5) What is NPM
+- It's the Node Package Manager
+- used to Install 3rd Party packages(Frameworks, libraries, tools, etc)
+- Packages get Stored in the node_modules folder
+- All the dependencies are listed in package.json file  --IMP
+- NPM scripts can be created to run certain tasks such as run a server
+
+6) Common Commands
+npm init                    - Genearates the package.json file
+npm install  express        - Installs the package/dependencies locally
+                            -After this step the package is listed in package.json
+npm install -g nodemon      - Installs a package globally on system
+
+IMP
+Running only npm install will create all the modules
+that are listed in the package.json
+
+
+7) Node Modules
+Node Core modules - (path,fs,http)
+3rd party modules/packages installed via NPM
+Custom modules  (files)
+
+eg-
+const path = require('path')     --(built in)
+const myFile = require('./myFile')
+
+8)Packages like nodemon are used
+so that we don't have to restart our server
+
+9)For this example
+--whenever you do
+npm run dev  -- It's similar to running  nodemon index
