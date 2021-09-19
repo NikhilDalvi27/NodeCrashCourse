@@ -10,6 +10,7 @@ const path = require('path');
 // using the path and the file module
 
 //todo uncomment
+// This is for creating a Folder
 // fs.mkdir(path.join(__dirname,'/test'),{},function (err) {
 //     if(err)
 //         throw err;
@@ -24,7 +25,7 @@ const path = require('path');
 // 2nd Parameter is the data which is written to the file
 // Note the structure of append read and writeFile is all same
 
-
+//
 // fs.writeFile(path.join(__dirname,'/test','hello.txt'),'Hello World!!',err=>{
 //     if(err)
 //         throw err;
